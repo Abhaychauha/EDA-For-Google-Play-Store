@@ -2,21 +2,7 @@
 
 An end-to-end exploratory data analysis (EDA) of Google Play Store apps, built in Python for **Google Colab**. The project looks at what drives app success (ratings, installs, reviews) and turns the findings into practical recommendations for app development, product, and marketing teams.
 
----
 
-##  Table of Contents
-- [Project Overview](#-project-overview)
-- [Business Problem](#-business-problem)
-- [Dataset](#-dataset)
-- [Repository Structure](#-repository-structure)
-- [How to Run](#-how-to-run)
-- [Methodology](#-methodology)
-- [Questions Answered](#-questions-answered)
-- [Key Findings](#-key-findings)
-- [Recommendations](#-recommendations)
-- [Limitations](#-limitations)
-- [Tech Stack](#-tech-stack)
-- [Resources](#-resources)
 
 ---
 
@@ -80,7 +66,7 @@ jupyter notebook App_Insights_EDA.ipynb
 ```
 Place `googleplaystore.csv` in the same folder as the notebook.
 
-## 🧪 Methodology
+##  Methodology
 
 ### 1. Data cleaning
 | Step | Action |
@@ -175,7 +161,7 @@ Plus a **bonus** comparison of high-rated (4.5+) apps against the rest.
 - **No revenue data**, so monetisation can't be measured directly.
 - **No review text** in the main file, so sentiment analysis needs the companion dataset.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Python 3
 - pandas, NumPy
