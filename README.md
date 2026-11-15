@@ -1,10 +1,10 @@
-# 📱 App Insights Unlocked: Google Play Store EDA
+#  App Insights Unlocked: Google Play Store EDA
 
 An end-to-end exploratory data analysis (EDA) of Google Play Store apps, built in Python for **Google Colab**. The project looks at what drives app success (ratings, installs, reviews) and turns the findings into practical recommendations for app development, product, and marketing teams.
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 - [Project Overview](#-project-overview)
 - [Business Problem](#-business-problem)
 - [Dataset](#-dataset)
@@ -20,7 +20,7 @@ An end-to-end exploratory data analysis (EDA) of Google Play Store apps, built i
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 You are a data analyst at a mobile-app company that has acquired Google Play Store data. The goal is to find patterns that guide app development strategy, improve user experience, and grow downloads and revenue.
 
@@ -30,7 +30,7 @@ The notebook covers:
 - 25 analytical questions (10 basic, 10 medium, 5 advanced)
 - Visualisations, written insights, and stakeholder recommendations
 
-## 💼 Business Problem
+##  Business Problem
 
 1. What key factors contribute to an app's success on the Play Store?
 2. How can the company use these factors to improve its own apps?
@@ -38,7 +38,7 @@ The notebook covers:
 
 **Stakeholders:** App developers, product managers, marketing, senior management (internal); app users, advertisers, partners (external).
 
-## 📂 Dataset
+##  Dataset
 
 | Item | Detail |
 |---|---|
@@ -52,7 +52,7 @@ The notebook covers:
 
 > The optional `googleplaystore_user_reviews.csv` from the same Kaggle page is only needed for the sentiment-analysis question (Advanced Q4).
 
-## 🗂 Repository Structure
+##  Repository Structure
 
 ```
 .
@@ -62,7 +62,7 @@ The notebook covers:
 └── README.md
 ```
 
-## 🚀 How to Run
+##  How to Run
 
 ### Option 1: Google Colab (recommended)
 1. Go to [colab.research.google.com](https://colab.research.google.com) and choose **File → Upload notebook**.
@@ -101,7 +101,7 @@ Place `googleplaystore.csv` in the same folder as the notebook.
 ### 3. Analysis
 Descriptive statistics, group-bys, correlations (Pearson and Spearman), binned analyses, and visualisations (histograms, boxplots, scatter plots, heatmaps, bar charts).
 
-## ❓ Questions Answered
+##  Questions Answered
 
 <details>
 <summary><b>Basic (10)</b></summary>
@@ -145,7 +145,7 @@ Descriptive statistics, group-bys, correlations (Pearson and Spearman), binned a
 
 Plus a **bonus** comparison of high-rated (4.5+) apps against the rest.
 
-## 📊 Key Findings
+##  Key Findings
 
 | # | Finding |
 |---|---|
@@ -158,7 +158,7 @@ Plus a **bonus** comparison of high-rated (4.5+) apps against the rest.
 | 7 | **Events, Art & Design, Education, Books & Reference** and Personalization rate highest; **Dating, Maps & Navigation and Tools** rate lowest. |
 | 8 | Reviews correlate almost perfectly with installs (≈ 0.97), so they work as an engagement and reach proxy. |
 
-## ✅ Recommendations
+##  Recommendations
 
 - **Product / management:** target *Everyone*-rated apps in high-demand categories, and consider less crowded, high-satisfaction niches (Education, Art & Design, Books & Reference).
 - **Developers:** ship updates at least every ~3 months; don't cut features just to save megabytes.
@@ -167,7 +167,7 @@ Plus a **bonus** comparison of high-rated (4.5+) apps against the rest.
 
 > These are associations, not proven causes.
 
-## ⚠️ Limitations
+##  Limitations
 
 - **Installs are bucketed** (e.g. `1,000,000+`), so real install counts are unknown.
 - **Single snapshot:** each app has one "Last Updated" date, so true update frequency and seasonality can't be measured. "Days since last update" is used as a proxy.
@@ -182,16 +182,4 @@ Plus a **bonus** comparison of high-rated (4.5+) apps against the rest.
 - Matplotlib, Seaborn
 - Google Colab / Jupyter
 
-## 📚 Resources
 
-- [Kaggle dataset](https://www.kaggle.com/datasets/lava18/google-play-store-apps)
-- [pandas documentation](https://pandas.pydata.org/docs/)
-- [seaborn example gallery](https://seaborn.pydata.org/examples/)
-- *Storytelling with Data* by Cole Nussbaumer Knaflic, for presenting findings
-
-## 🔮 Possible Next Steps
-
-- Build a classifier (e.g. Random Forest) to predict high-rated apps
-- Run the sentiment analysis with the user-reviews dataset
-- Collect update-history data for real seasonality analysis
-- Build an interactive dashboard (Streamlit or Power BI)
